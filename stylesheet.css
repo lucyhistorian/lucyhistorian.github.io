@@ -1,15 +1,46 @@
-body
-{
-	background-color: #383838;
+body{
+	background-color: #ffffaa;
 }
 
-#Canvas
-{
-    border: 3px solid #000;
+h1{
+	text-align: center;
+	font-family: "Courier";
 }
 
-div
-{
-	display: table;
-    margin: 0 auto;
+.game{
+	outline: solid 2px;
+	height: 300;
+}
+
+.cover{
+	height: 256px;
+	float: left;
+}
+
+.title{
+	float:top;
+	text-align: center;
+}
+
+.descriptionbox{
+	float: center;
+	width: 75%;
+	display: inline-block;
+}
+
+.description{
+	font-size: 12pt;
+	margin-left: 32px;
+}
+
+.play{
+	color: #3344ff;
+}
+
+.play:hover{
+	color: #ffff22;
+}
+
+.gamelink:visited{
+	color: #000;
 }

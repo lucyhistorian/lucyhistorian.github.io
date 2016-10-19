@@ -12,13 +12,7 @@ var highscore = 0;
 var asteroid = [0,0,0,0,0,0,0,0,0,0,0,0];
 var roidCount = 0;
 
-var s_die = new Audio("die.wav");
-var s_mus = new Audio("music.mp3");
-s_mus.addEventListener('ended', function() {
-this.currentTime = 0;
-this.play();
-}, false);//Music
-
+var s_die = new Audio("ss_die.wav");
 
 function Ship()
 {
@@ -264,7 +258,6 @@ var reset = function()
 {
 	score = 0;
 	if (startScreen)
-	s_mus.play();
 	startScreen = false;
 	highscore = 0;
 	ship = new Ship();
