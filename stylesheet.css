@@ -1,37 +1,15 @@
-h1{
-	color: #d9d959;
-	text-align: center;
-	text-shadow: -3px 3px 1px #777;
+body
+{
+	background-color: #383838;
 }
 
-#ugly{
-	font-family: "Comic Sans MS";
+#Canvas
+{
+    border: 3px solid #000;
 }
 
-#ugly:hover{
-	color: red;
-	
+div
+{
+	display: table;
+    margin: 0 auto;
 }
-
-#main{
-	background-color: #f1e3ff
-}
-
-#purple{
-	height: 200px;
-	width: 200px;
-	background-color: #bb60ee
-}
-
-.blog{
-	background-color:#eeeeee
-	width: 200px;
-	height:300px;
-	outline: solid 3px;
-}
-
-#harambe{
-	width: 5%;
-	height: 5%;
-}
-/*Comment*/
