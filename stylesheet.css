@@ -7,30 +7,25 @@ h1{
 	font-family: "Courier";
 }
 
-.game{
-	outline: solid 2px;
-	height: 300;
+#games{
+	border:2px solid #000;
 }
+
 
 .cover{
 	height: 256px;
-	float: left;
 }
 
 .title{
-	float:top;
 	text-align: center;
 }
 
 .descriptionbox{
-	float: center;
-	width: 75%;
-	display: inline-block;
+	outline: solid 1px #000;
 }
 
 .description{
 	font-size: 12pt;
-	margin-left: 32px;
 }
 
 .play{
@@ -43,4 +38,8 @@ h1{
 
 .gamelink:visited{
 	color: #000;
+}
+
+a{
+	text-decoration: none;
 }

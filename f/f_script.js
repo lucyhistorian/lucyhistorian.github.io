@@ -2,7 +2,7 @@ var canvas = document.getElementById("c");
 var context = canvas.getContext("2d");
 var c_width = 640;
 var c_height = 480;
-var fps = 40;
+var fps = 45;
 var kp_left = false;
 var kp_right = false;
 var kp_up = false;
@@ -319,7 +319,7 @@ new Array(
     [3 ,0 ,0 ,0 ,2 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0],
     [0 ,3 ,0 ,0 ,2 ,0 ,0 ,0 ,0 ,0 ,3 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0],
     [0 ,0 ,0 ,0 ,0 ,2 ,0 ,0 ,0 ,0 ,0 ,4 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0],
-    [0 ,0 ,2 ,0 ,0 ,2 ,0 ,0 ,0 ,0 ,0 ,3 ,3 ,0 ,0 ,3 ,0 ,0 ,0 ,0],
+    [0 ,0 ,2 ,0 ,0 ,2 ,0 ,0 ,0 ,0 ,0 ,3 ,3 ,0 ,3 ,3 ,0 ,0 ,0 ,0],
     [0 ,2 ,0 ,3 ,0 ,2 ,0 ,0 ,0 ,0 ,0 ,2 ,2 ,2 ,0 ,3 ,0 ,0 ,0 ,0],
 	[3 ,0 ,0 ,0 ,0 ,3 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,0],
 	[0 ,2 ,0 ,3 ,0 ,3 ,0 ,1 ,0 ,0 ,0 ,0 ,0 ,0 ,0 ,2 ,2 ,2 ,3 ,3],
@@ -811,7 +811,6 @@ var clamp = function(min,mid,max)
 
 var Step = function()
 {
-	takeInput();
 	you.ev_step();
 };
 
@@ -839,6 +838,5 @@ var Update = function()
 };
 
 makeLevel(1);
-
-
+takeInput();
 setInterval(Update,1000 / fps);
