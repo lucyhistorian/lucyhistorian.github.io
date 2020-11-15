@@ -1,45 +1,21 @@
+@font-face {
+  font-family: "2amFont";
+  src: url("fonts/BigShouldersStencilText-SemiBold.woff") format("woff"), /* Modern Browsers */
+    url("fonts/BigShouldersStencilText-SemiBold.woff2") format("woff2"); /* Modern Browsers */
+}
+
 body{
-	background-color: #ffffaa;
+	background-color: #332255;
 }
 
 h1{
+	color: #eee;
 	text-align: center;
-	font-family: "Courier";
+	font-family: "2amFont";
+	font-size: 48pt;
 }
 
-#games{
-	border:2px solid #000;
-}
-
-
-.cover{
-	height: 256px;
-}
-
-.title{
-	text-align: center;
-}
-
-.descriptionbox{
-	outline: solid 1px #000;
-}
-
-.description{
-	font-size: 12pt;
-}
-
-.play{
-	color: #3344ff;
-}
-
-.play:hover{
-	color: #ffff22;
-}
-
-.gamelink:visited{
-	color: #000;
-}
-
-a{
-	text-decoration: none;
+li{
+	font-family: "2amFont";
+	font-size:24pt;
 }
