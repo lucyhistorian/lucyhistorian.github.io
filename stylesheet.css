@@ -6,6 +6,12 @@
 
 body{
 	background-color: #332255;
+	background: #222244 url("images/background.png") no-repeat right top;
+}
+
+#content{
+	display:grid;
+	grid-template-columns: 20% 60%;
 }
 
 h1{
@@ -15,7 +21,85 @@ h1{
 	font-size: 48pt;
 }
 
+h2{
+	text-align:center;
+	color: #eee;
+	font-family: "2amFont";
+}
+
+h3{
+	text-align:center;
+	color: #ddd;
+	font-family: "2amFont";
+}
+
+#navbar
+{
+	background-color: #000044;
+	border: 2px solid #000022;
+	text-align:right;
+}
+
+#navbar table
+{
+		display:inline-table;
+}
+
+#navbar td
+{
+	text-align: right;
+	display: inline-table;
+	vertical-align: center;
+	color: #cccccc;
+}
+
+.button
+{
+	font-family:"2amFont";
+	text-decoration: none;
+	padding: 2px;
+	color: #cccccc;
+	border: 2px solid #cccccc;
+	display: inline-block;
+	margin-top: 3%;
+}
+
+.button:hover
+{
+	color: #ffffff;
+	border: 2px solid #ffffff;
+}
+
+#button-panel
+{
+	grid-column: 1;
+	border: 2px solid #ccc;
+	display: table;
+	padding: 1% 4% 2% 4%;
+	background-color: #112244;
+}
+
+#button-panel ul
+{
+	list-style-type:none;
+}
+
+#header-image{
+	width:100%;
+}
+
 li{
 	font-family: "2amFont";
 	font-size:24pt;
+}
+
+#embedded-album{
+	grid-column: 2;
+	position:absolute;
+	right:0px;
+	padding-right:1%;
+}
+
+#ad{
+	grid-column:2;
 }
