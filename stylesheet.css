@@ -11,7 +11,8 @@ body{
 
 #content{
 	display:grid;
-	grid-template-columns: 20% 60%;
+	grid-template-columns: 20% 60% 20%;
+	grid-template-rows: 80% 20%;
 }
 
 h1{
@@ -94,7 +95,7 @@ li{
 }
 
 #embedded-album{
-	grid-column: 2;
+	grid-column: 3;
 	position:absolute;
 	right:0px;
 	padding-right:1%;
@@ -102,4 +103,17 @@ li{
 
 #ad{
 	grid-column:2;
+}
+
+#ad img{
+	float:right;
+	margin-right: 25%;
+}
+
+#footer{
+	grid-row:2;
+	grid-column:2;
+	bottom:0;
+	width:100%;
+	margin-top:100%;
 }
