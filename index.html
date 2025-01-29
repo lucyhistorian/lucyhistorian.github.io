@@ -12,80 +12,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   
- 
-  <!--WIGGLE-->
-  <style>
-.shakeimage{
-position:relative
-}
-</style>
-<script language="JavaScript1.2">
-
-/*
-Shake image script (onMouseover)- 
-(c) Dynamic Drive (www.dynamicdrive.com)
-For full source code, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
-*/
-
-//configure shake degree (where larger # equals greater shake)
-var rector=5
-
-///////DONE EDITTING///////////
-var stopit=0 
-var stopitm=0;
-var a=1
-
-function init(which){
-stopit=0
-shake=which
-shake.style.left=0;
-shake.style.top=0
-}
-
-function rattleimage(){
-if ((!document.all&&!document.getElementById)||stopit==1||stopitm==1)
-return
-if (a==1){
-shake.style.top=parseInt(shake.style.top)+rector+"px"
-}
-else if (a==2){
-shake.style.left=parseInt(shake.style.left)+rector+"px"
-}
-else if (a==3){
-shake.style.top=parseInt(shake.style.top)-rector+"px"
-}
-else{
-shake.style.left=parseInt(shake.style.left)-rector+"px"
-}
-if (a<4)
-a++
-else
-a=1
-setTimeout("rattleimage()",50)
-}
-
-function stoprattle(which){
-stopit=1
-which.style.left=0
-which.style.top=0
-}
-
-function press_present(){
-	document.getElementById("ptop").src='empty.png';
-	stopitm=1;
-}
-
-</script>
-  <!--WIGGLE-->
-  
-  
   <body>
     <div class="profile-name">Lucy Historian</div>
     <!-- Links, you can copy and paste these lines as many times as you want-->
 	<center>
-	<img src='lh_profile.png' id='lhp'></img>
-	<img src='present_bottom.png' style='width: 400px; position:relative; left: 400px;'></img>
-	<img src='present_top.png' id='ptop' class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="press_present()" style='width: 400px; position:relative;'></img>
+	<a href="https://linktr.ee/lucyhistorian"><img src='lh_profile.png' id='lhp'></img></a>
 	</center>
 	
 	<center>
@@ -101,6 +32,7 @@ function press_present(){
 	<hr>
 	<div class="social-box">
 	<a href="https://twitter.com/lucyhistorian"><img src="icon_twt.png" class="social-icon"></a>
+	<a href="https://bsky.app/profile/lucyhistorian.com"><img src="icon_bsky.png" class="social-icon"></a>
 	<a href="https://lucyhistorian.tumblr.com"><img src="icon_tum.png" class="social-icon"></a>
 	<a href="https://www.youtube.com/channel/UCaXya0XoOrlO2erNNUxEMAQ"><img src="icon_yt.png" class="social-icon"></a>
 	<a href="https://www.tiktok.com/@lucyhistorian"><img src="icon_tt.png" class="social-icon"></a>
